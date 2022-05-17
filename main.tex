@@ -1,0 +1,67 @@
+%artigo científico sobre bel e decibel em abnt2
+
+
+\documentclass[article, 11pt, oneside, a4paper, english, brazil, sumario=tradicional]{abntex2}
+\input{packages}
+
+% Informações de dados para CAPA e FOLHA DE ROSTO
+\def \theforeigntitle{}
+\titulo{Bel e Decibel}
+\autor{Luís Henrique Martins Carvalho}
+\local{Brasil}
+\data{Maio, 2022}
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={Bel e Decibel},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+
+% compila o indice
+\makeindex
+
+% Altera as margens padrões
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+
+% Espaçamentos entre linhas e parágrafos 
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+% Espaçamento simples
+\SingleSpacing
+
+
+
+\begin{document}
+    % Retira espaço extra obsoleto entre as frases.
+    \frenchspacing 
+    \maketitle
+    \input{resumo}
+    \input{introducao}
+    \input{definicao}
+    \input{potencia}
+    \input{som}
+    \input{outras_log}
+    \input{consideracoes_finais}
+    
+    \bibliography{referencias}
+
+\end{document}
+

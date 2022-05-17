@@ -1,0 +1,52 @@
+\section{Definição}
+    O bel (símbolo: B) é uma unidade de medida adimensional, que compara a intensidade de um sinal a um nível de referência. Recebe este nome em homenagem ao físico Alexander Graham Bell. O cálculo é mais frequente em decibel. \cite{wiki:xxx}
+    A unidade bel é usada para caracterizar o logaritmo decimal da razão entre duas quantidades similares de energia ou potência $P_1$ e $P_2$:
+    \begin{equation*}
+        Q_{(P)} = \log \frac{P_{1}}{P_{2}} \mathrm{B} = 10 \log \frac{P_{1}}{P_{2}} \mathrm{dB}
+    \end{equation*}
+
+    Para ${Q_{(P)}}$, por exemplo, o valor 1 B resulta quando a razão de potência é ${\frac{P_{1}}{P_{2}}} = 10 $. O decibel, por sua vez, é formado com o acréscimo do prefixo d (deci): 
+    \begin{equation*}
+        1 \mathrm {dB} = \frac{1}{10} \mathrm{B}
+    \end{equation*}
+    
+    O decibel pode expressar uma alteração no valor (por exemplo, +1 dB ou $-1$ dB) ou um valor absoluto. No último caso, o valor numérico expressa a proporção de um valor para um valor de referência fixo; quando usado dessa forma, o símbolo da unidade geralmente é sufixado com códigos de letras que indicam o valor de referência. Por exemplo, para o valor de referência de 1 volt, um sufixo comum é "V" (por exemplo, "20 dBV")
+
+    As normas ISO 80000-8 e 60027-3 descrevem as definições para grandezas físicas e quantidades, entre as quais o decibel. De acordo com essas definições, o decibel (1 dB) é uma décima parte do bel. O bel (B), por sua vez, é definido como 0,5 log(10) neper: 1 B = 0,5 log(10) Np. Por sua vez, o neper é definido como a mudança em nível de uma quantidade de potência-raiz quando a quantidade de potência-raiz muda por um fator de e, ou seja, 1 Np = ln(e) = 1, relacionando, assim, todas as unidades como o logaritmo natural não-dimensional das relações potência-raiz-quantidade, 1 dB = 0.115 13… Np = 0.115 13…. Finalmente, o nível de uma quantidade é o logaritmo da razão entre o valor dessa quantidade e um valor de referência do mesmo tipo de quantidade. Essas definições permitem estabelecer as seguintes igualdades:
+    
+    \begin{equation*}
+        1 \mathrm{dB} = 0,1 \mathrm{B}
+    \end{equation*}
+    \begin{equation*}
+        {\displaystyle 1{\text{ B}}={\frac {1}{2}}\log _{e}\left({\frac {Q}{Q_{0}}}\right)\,{\text{Np}}=10\log _{10}\left({\frac {Q}{Q_{0}}}\right) {\text{dB}}}
+    \end{equation*}
+    
+    onde $Q$ é a quantidade medida e $Q_0$ o valor de referência.\\
+    
+    Portanto, o bel representa o logaritmo de uma razão entre duas grandezas de potência de 10:1, ou o logaritmo de uma proporção entre duas grandezas de potência-raiz de $\sqrt{10:1}$. Logo, duas quantidades cujos níveis diferem em um decibel têm uma relação de potência de $10^{1/10}$, o que corresponde aproximadamente a 1,25893, e uma amplitude (quantidade potência-raiz) cujo rácio é $10^{1/20}$ (aproximadamente 1,12202).
+    
+        Como a potência é proporcional ao quadrado da tensão dividida pela
+    resistência do circuito, temos, aplicando as propriedades dos logaritmos (o log.
+    do quadrado de n é duas vezes o log. de n) :
+    
+    \begin{equation*}
+        Q_{(dB)} = 20 \log \frac{V_1}{V_2} + 10 \log \frac{R_2}{R_1}
+    \end{equation*}
+    
+    ou ainda, na mesma resistência :
+    
+    \begin{equation*}
+        Q_{(dB)} = 20 \log \frac{V_1}{V_2}
+    \end{equation*}
+    
+        Para ganhos por ex., $P_2$ é a potência de entrada e $P_1$ a potência de saída do
+    circuito.
+        Para atenuações, $P_1$ é a potência de entrada e $P_2$ a potência de saída.
+    Atenuação é o inverso do ganho (em unidades lineares) e é igual ao ganho em
+    dB com sinal trocado.
+    
+    \input{tabela.tex}
+    
+    Observe que 0 dB (zero dB) equivale a uma relação de 1, e 3 dB equivale a uma relação de 2 ( em potência), e 10 dB por acaso equivale a uma relação de 10, ou seja, +3 dB equivale a multiplicar por 2, +10 dB equivale a multiplicar por 10, -3 dB equivale a dividir por 2, -10 dB equivale a dividir por 10.
+    
+    
